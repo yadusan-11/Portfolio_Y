@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ravichandran Yadusan — Freelance Graphic Designer</title>
+  <meta name="description" content="Portfolio of Ravichandran Yadusan, freelance graphic designer specializing in Canva design, branding & visual identity, social media graphics, and motion visuals.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/about-avatar.jpg" type="image/jpeg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="site-logo" aria-label="Home">
+        <span class="logo-dot"></span>
+        <span>Yadusan</span>
+        <span class="logo-subtitle">Design</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="#about">About</a>
+        <a href="#work">Selected Work</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme">
+          <!-- Sun Icon for Dark Mode -->
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon for Light Mode -->
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn-nav-cta">Start a Project</a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div class="drawer-header">
+        <a href="#" class="site-logo">
+          <span class="logo-dot"></span>
+          <span>Yadusan</span>
+        </a>
+        <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="#about" class="drawer-link">About</a>
+        <a href="#work" class="drawer-link">Selected Work</a>
+        <a href="#services" class="drawer-link">Services</a>
+        <a href="#skills" class="drawer-link">Skills</a>
+        <a href="#contact" class="drawer-link">Contact</a>
+      </nav>
+    </div>
+    <div class="drawer-footer">
+      <a href="https://wa.me/94741703653" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        WhatsApp Chat
+      </a>
+      <a href="#contact" class="btn btn-primary drawer-link">Start a Project</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="status-dot"></span>
+            <span>Available for new freelance projects</span>
+          </div>
+
+          <span class="hero-role-badge">Ravichandran Yadusan — Graphic Designer</span>
+
+          <h1 class="hero-title">
+            <span class="text-italic-quote">“Where vision becomes reality.”</span>
+            Transforming ideas into high-impact visual design.
+          </h1>
+
+          <p class="hero-desc">
+            Creative graphic designer specializing in Canva design, bespoke branding, marketing graphics, and AI-assisted motion visuals. I craft modern, memorable designs that help brands stand out and connect with their audience.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Start a Project</a>
+            <a href="#work" class="btn btn-secondary">Selected Work</a>
+            <a href="https://wa.me/94741703653" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" aria-label="Chat on WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">86%</span>
+              <span class="hero-stat-label">Core Design Proficiency</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">100%</span>
+              <span class="hero-stat-label">Client Focus</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">24/7</span>
+              <span class="hero-stat-label">Support & Revisions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Frame -->
+        <div class="hero-visual-wrapper">
+          <div class="decorative-blob"></div>
+          <div class="hero-card">
+            <img src="assets/images/hero-portrait.png" alt="Ravichandran Yadusan Portfolio Visual" class="hero-image-frame" loading="eager">
+            <div class="hero-card-floating-badge">
+              <div class="floating-badge-icon">🎨</div>
+              <div class="floating-badge-text">
+                <strong>Canva Specialist & Designer</strong>
+                <span>Branding · Social Media · Motion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-image-card">
+          <img src="assets/images/about-avatar.jpg" alt="Ravichandran Yadusan Portrait" class="about-avatar-img" loading="lazy">
+          <div class="about-quote-pill">
+            “Every client brief is a story waiting to be told.”
+          </div>
+        </div>
+
+        <div class="about-content-col">
+          <span class="badge-tag">Who I Am</span>
+          <h2 class="section-title">About Me</h2>
+          
+          <p>
+            I'm a creative Graphic Designer specializing in Canva design, with a passion for creating eye-catching visuals for social media, marketing, and branding. I'm continuously learning and developing my skills, including exploring Adobe Photoshop. I love turning creative ideas into reality through professional, modern, and impactful designs that help brands stand out and connect with their audience.
+          </p>
+
+          <p>
+            Creative and detail-oriented with strong problem-solving, adaptability, and time-management skills. Skilled in graphic design, typography, branding, composition, color theory, and AI integration. I bring dedication and craft to every brief, ensuring your brand leaves a lasting impression.
+          </p>
+
+          <div class="about-features-grid">
+            <div class="about-feature-item">
+              <span class="feature-check">✓</span>
+              <div class="feature-text">
+                <strong>Canva Design Specialist</strong>
+                <span>Fast, scalable, and editable template workflows</span>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <span class="feature-check">✓</span>
+              <div class="feature-text">
+                <strong>Brand & Visual Identity</strong>
+                <span>Logos, color palettes, and brand guidelines</span>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <span class="feature-check">✓</span>
+              <div class="feature-text">
+                <strong>AI Workflow Integration</strong>
+                <span>Next-generation creative tools & motion assets</span>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <span class="feature-check">✓</span>
+              <div class="feature-text">
+                <strong>24/7 Fast Communication</strong>
+                <span>Open revisions, quick replies, and friendly service</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK SECTION -->
+    <section class="work-section" id="work">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge-tag">Portfolio</span>
+          <h2 class="section-title">Crafted to Impress</h2>
+          <p class="section-subtitle">
+            A selection of recent design work across social media campaigns, brand visual identities, motion reels, and digital web concepts.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="branding">Branding & Social</button>
+          <button class="filter-btn" data-filter="motion">Motion & Video</button>
+          <button class="filter-btn" data-filter="web">Web & Presentations</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- 1. Beverage Social Campaign -->
+          <article class="project-card" data-category="branding">
+            <div class="project-thumb-container" onclick="openLightbox('image', 'assets/images/project-beverage.png', 'Beverage Brand Campaign', 'Social Media Graphic Designer', 'Crafted for those who love exceptional flavor. Refreshment has never tasted this good.')">
+              <img src="assets/images/project-beverage.png" alt="Beverage Post Design" class="project-thumb-img" loading="lazy">
+              <span class="project-type-tag">Social Campaign</span>
+            </div>
+            <div class="project-body">
+              <span class="project-role">Social Media Graphic Designer</span>
+              <h3 class="project-title">Beverage Brand Post</h3>
+              <p class="project-desc">“Crafted for those who love exceptional flavor. Refreshment has never tasted this good.” Dynamic product composition and packaging colors.</p>
+              <span class="project-action-link" onclick="openLightbox('image', 'assets/images/project-beverage.png', 'Beverage Brand Campaign', 'Social Media Graphic Designer', 'Crafted for those who love exceptional flavor. Refreshment has never tasted this good.')">View Project →</span>
+            </div>
+          </article>
+
+          <!-- 2. Headphone Post -->
+          <article class="project-card" data-category="branding">
+            <div class="project-thumb-container" onclick="openLightbox('image', 'assets/images/project-headphone.png', 'Premium Headphones Campaign', 'Product & Ad Designer', 'Smart Sound for Modern Life. Wear the Future of Sound. Premium sleek advertising layout.')">
+              <img src="assets/images/project-headphone.png" alt="Headphone Post Design" class="project-thumb-img" loading="lazy">
+              <span class="project-type-tag">Product Ad</span>
+            </div>
+            <div class="project-body">
+              <span class="project-role">Product & Advertisement Designer</span>
+              <h3 class="project-title">Headphone Brand Post</h3>
+              <p class="project-desc">“Smart Sound for Modern Life. Wear the Future of Sound.” High-tech aesthetic designed to capture audio enthusiasm and modern minimalism.</p>
+              <span class="project-action-link" onclick="openLightbox('image', 'assets/images/project-headphone.png', 'Premium Headphones Campaign', 'Product & Ad Designer', 'Smart Sound for Modern Life. Wear the Future of Sound. Premium sleek advertising layout.')">View Project →</span>
+            </div>
+          </article>
+
+          <!-- 3. ChatGPT Video Visualizer -->
+          <article class="project-card" data-category="motion">
+            <div class="project-thumb-container" onclick="openLightbox('video', 'assets/videos/project-chatgpt.mp4', 'ChatGPT Motion Visualizer', 'Motion & AI Visualizer', 'Promotional motion visual video demonstrating dynamic prompt-to-production creative integration.')">
+              <video src="assets/videos/project-chatgpt.mp4" class="project-thumb-video" muted loop playsinline></video>
+              <div class="play-badge-overlay">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <span class="project-type-tag">Motion Video</span>
+            </div>
+            <div class="project-body">
+              <span class="project-role">Motion & AI Visualizer</span>
+              <h3 class="project-title">ChatGPT Motion Video</h3>
+              <p class="project-desc">Dynamic visual narrative showcasing cutting-edge AI concepts, seamless typography pacing, and engaging motion transitions.</p>
+              <span class="project-action-link" onclick="openLightbox('video', 'assets/videos/project-chatgpt.mp4', 'ChatGPT Motion Visualizer', 'Motion & AI Visualizer', 'Promotional motion visual video demonstrating dynamic prompt-to-production creative integration.')">Play Video →</span>
+            </div>
+          </article>
+
+          <!-- 4. AI Introduction Video -->
+          <article class="project-card" data-category="motion">
+            <div class="project-thumb-container" onclick="openLightbox('video', 'assets/videos/project-ai-intro.mp4', 'AI Introduction Reel', 'Motion Designer', 'High-energy vertical reel introducing artificial intelligence capabilities with futuristic aesthetics.')">
+              <video src="assets/videos/project-ai-intro.mp4" class="project-thumb-video" muted loop playsinline></video>
+              <div class="play-badge-overlay">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <span class="project-type-tag">Vertical Reel</span>
+            </div>
+            <div class="project-body">
+              <span class="project-role">Motion Designer</span>
+              <h3 class="project-title">AI Introduction Video</h3>
+              <p class="project-desc">Vertical short-form video crafted for social media reels, blending crisp audio synchronization with vibrant futuristic visuals.</p>
+              <span class="project-action-link" onclick="openLightbox('video', 'assets/videos/project-ai-intro.mp4', 'AI Introduction Reel', 'Motion Designer', 'High-energy vertical reel introducing artificial intelligence capabilities with futuristic aesthetics.')">Play Video →</span>
+            </div>
+          </article>
+
+          <!-- 5. Pinnacle Academy Website UI -->
+          <article class="project-card" data-category="web">
+            <div class="project-thumb-container" onclick="openLightbox('image', 'assets/images/project-pinnacle.png', 'Pinnacle Academy Academic Website', 'Web & UI Designer', 'Designed a modern and user-friendly academic website for Pinnacle Academy, focused on clear communication, easy navigation, and a professional educational presence.', 'https://paitedu.my.canva.site/welcome-to-pinnacle-academy', 'Visit Live Website (Home) ↗')">
+              <img src="assets/images/project-pinnacle.png" alt="Pinnacle Academy Website UI" class="project-thumb-img" loading="lazy">
+              <span class="project-type-tag">Web & UI Design</span>
+            </div>
+            <div class="project-body">
+              <span class="project-role">Web & UI Designer</span>
+              <h3 class="project-title">Pinnacle Academy Web UI</h3>
+              <p class="project-desc">Modern educational platform UI featuring organized course directories, intuitive navigation hierarchy, and responsive academic presentation.</p>
+              <div class="project-actions-row">
+                <span class="project-action-link" onclick="openLightbox('image', 'assets/images/project-pinnacle.png', 'Pinnacle Academy Academic Website', 'Web & UI Designer', 'Designed a modern and user-friendly academic website for Pinnacle Academy, focused on clear communication, easy navigation, and a professional educational presence.', 'https://paitedu.my.canva.site/welcome-to-pinnacle-academy', 'Visit Live Website (Home) ↗')">View Details →</span>
+                <a href="https://paitedu.my.canva.site/welcome-to-pinnacle-academy" target="_blank" rel="noopener noreferrer" class="project-live-btn" aria-label="Visit Pinnacle Academy Website">
+                  <span>Home</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Ironman Video Showcase -->
+          <article class="project-card" data-category="motion">
+            <div class="project-thumb-container" onclick="openLightbox('video', 'assets/videos/project-ironman.mp4', 'Ironman Motion Visual', 'Motion & VFX Visualizer', 'Cinematic motion video showcasing dynamic character framing, neon glow grading, and high-impact sound design.')">
+              <video src="assets/videos/project-ironman.mp4" class="project-thumb-video" muted loop playsinline></video>
+              <div class="play-badge-overlay">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+              <span class="project-type-tag">Cinematic Motion</span>
+            </div>
+            <div class="project-body">
+              <span class="project-role">Motion & VFX Visualizer</span>
+              <h3 class="project-title">Ironman Motion Video</h3>
+              <p class="project-desc">High-octane visual montage emphasizing cinematic framing, superhero aesthetic styling, and impactful transition timing.</p>
+              <span class="project-action-link" onclick="openLightbox('video', 'assets/videos/project-ironman.mp4', 'Ironman Motion Visual', 'Motion & VFX Visualizer', 'Cinematic motion video showcasing dynamic character framing, neon glow grading, and high-impact sound design.')">Play Video →</span>
+            </div>
+          </article>
+
+          <!-- 7. Healthy Food Presentation (Canva Connected) -->
+          <article class="project-card" data-category="web">
+            <div class="project-thumb-container" onclick="openLightbox('embed', 'https://www.canva.com/design/DAHRUZlcsoU/-LhxOd7xuryEuCxjj-qN3g/view?embed&amp;meta', 'Healthy Food Presentation Deck', 'Presentation Designer', 'Interactive presentation deck designed on Canva, combining clean layouts, compelling visuals, and well-structured content to communicate healthy eating.', 'https://canva.link/jfj7e6pjchaupxl', 'Open Canva Deck (Full View) ↗')">
+              <img src="assets/images/project-healthy-food-1.jpg" alt="Healthy Food Presentation Deck" class="project-thumb-img" loading="lazy">
+              <div class="play-badge-overlay" style="background: rgba(48,66,84,0.85);" title="Interactive Canva Presentation">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="project-type-tag">Interactive Canva Deck</span>
+            </div>
+            <div class="project-body">
+              <span class="project-role">Presentation Designer</span>
+              <h3 class="project-title">Healthy Food Presentation</h3>
+              <p class="project-desc">Designed a professional and visually engaging Healthy Food presentation on Canva, combining clean layouts and compelling visuals. Explore the interactive deck.</p>
+              <div class="project-actions-row">
+                <span class="project-action-link" onclick="openLightbox('embed', 'https://www.canva.com/design/DAHRUZlcsoU/-LhxOd7xuryEuCxjj-qN3g/view?embed&amp;meta', 'Healthy Food Presentation Deck', 'Presentation Designer', 'Interactive presentation deck designed on Canva, combining clean layouts, compelling visuals, and well-structured content to communicate healthy eating.', 'https://canva.link/jfj7e6pjchaupxl', 'Open Canva Deck (Full View) ↗')">Interactive Deck →</span>
+                <a href="https://canva.link/jfj7e6pjchaupxl" target="_blank" rel="noopener noreferrer" class="project-live-btn" aria-label="Open presentation on Canva">
+                  <span>Canva Link</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Flavor Refreshment Post -->
+          <article class="project-card" data-category="branding">
+            <div class="project-thumb-container" onclick="openLightbox('image', 'assets/images/project-flavor.png', 'Flavor & Refreshment Campaign', 'Social Media Graphic Designer', 'High-impact social media creative focused on taste appeal, color contrast, and bold headline typography.')">
+              <img src="assets/images/project-flavor.png" alt="Flavor Refreshment Design" class="project-thumb-img" loading="lazy">
+              <span class="project-type-tag">Brand Creative</span>
+            </div>
+            <div class="project-body">
+              <span class="project-role">Social Media Graphic Designer</span>
+              <h3 class="project-title">Flavor & Refreshment Post</h3>
+              <p class="project-desc">Bold typographic packaging ad developed for social channels, combining vibrant fruit colors and thirst-quenching visual accents.</p>
+              <span class="project-action-link" onclick="openLightbox('image', 'assets/images/project-flavor.png', 'Flavor & Refreshment Campaign', 'Social Media Graphic Designer', 'High-impact social media creative focused on taste appeal, color contrast, and bold headline typography.')">View Project →</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge-tag">Expertise</span>
+          <h2 class="section-title">Creative Services & What I Can Do</h2>
+          <p class="section-subtitle">
+            Tailored design services built to elevate small businesses, startups, creators, and brands.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon-box">✦</div>
+            <h3 class="service-title">Branding & Visual Identity</h3>
+            <p class="service-desc">Complete brand identity kits that capture your essence, establish authority, and resonate with your target market.</p>
+            <ul class="service-deliverables">
+              <li class="deliverable-pill">Logos</li>
+              <li class="deliverable-pill">Brand Identity</li>
+              <li class="deliverable-pill">Business cards</li>
+              <li class="deliverable-pill">Brand Guidelines</li>
+            </ul>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon-box">◈</div>
+            <h3 class="service-title">Social Media Design</h3>
+            <p class="service-desc">Eye-catching social media posts, stories, and carousel templates designed to stop the scroll and drive engagement.</p>
+            <ul class="service-deliverables">
+              <li class="deliverable-pill">Posts & Stories</li>
+              <li class="deliverable-pill">Advertisements</li>
+              <li class="deliverable-pill">Banners</li>
+              <li class="deliverable-pill">Carousel Graphics</li>
+            </ul>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon-box">❖</div>
+            <h3 class="service-title">Print & Marketing Design</h3>
+            <p class="service-desc">High-resolution print materials prepared to exact print specifications for maximum visual punch in the real world.</p>
+            <ul class="service-deliverables">
+              <li class="deliverable-pill">Posters</li>
+              <li class="deliverable-pill">Banners</li>
+              <li class="deliverable-pill">Brochures</li>
+              <li class="deliverable-pill">Flyers</li>
+            </ul>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon-box">📊</div>
+            <h3 class="service-title">Presentation Design</h3>
+            <p class="service-desc">Persuasive pitch decks and academic presentations that structure complex information into clean, digestible slides.</p>
+            <ul class="service-deliverables">
+              <li class="deliverable-pill">Pitch Decks</li>
+              <li class="deliverable-pill">Academic Presentations</li>
+              <li class="deliverable-pill">Webinars</li>
+              <li class="deliverable-pill">Keynotes</li>
+            </ul>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-icon-box">📰</div>
+            <h3 class="service-title">Editorial & Publication</h3>
+            <p class="service-desc">Structured, publication-ready layouts with meticulous attention to typography, margins, and readability.</p>
+            <ul class="service-deliverables">
+              <li class="deliverable-pill">Catalogues</li>
+              <li class="deliverable-pill">Magazine Layouts</li>
+              <li class="deliverable-pill">Brochures</li>
+              <li class="deliverable-pill">PDF Guides</li>
+            </ul>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-icon-box">⚡</div>
+            <h3 class="service-title">24/7 Client Communication</h3>
+            <p class="service-desc">Prompt revisions, seamless feedback loops, and friendly support throughout your project lifecycle.</p>
+            <ul class="service-deliverables">
+              <li class="deliverable-pill">Fast Turnaround</li>
+              <li class="deliverable-pill">Direct WhatsApp</li>
+              <li class="deliverable-pill">Unlimited Iterations</li>
+              <li class="deliverable-pill">Full Source Files</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Skills Breakdown Block -->
+        <div class="skills-block" id="skills">
+          <h3 class="skills-heading">Skills & Proficiencies</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Canva Design</span>
+                <span class="skill-pct">86%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 86%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Typography & Layout</span>
+                <span class="skill-pct">86%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 86%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Branding & Identity</span>
+                <span class="skill-pct">86%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 86%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Visual Hierarchy & Color Theory</span>
+                <span class="skill-pct">86%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 86%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Ethics of AI in Design</span>
+                <span class="skill-pct">86%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 86%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Adobe Photoshop Exploration</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info-col">
+          <span class="badge-tag">Let's Connect</span>
+          <h2 class="section-title">“Let’s Create Together”</h2>
+          <p class="contact-lead">
+            Have a vision in mind? Let’s turn it into something remarkable. Drop me a line or two if you want to work together! Reach out today and let’s create a design that makes a lasting impact.
+          </p>
+
+          <div class="contact-methods">
+            <!-- Email -->
+            <a href="mailto:yaesthetic1@gmail.com" class="contact-card-item">
+              <div class="contact-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">Email Me</span>
+                <div class="contact-detail-val">yaesthetic1@gmail.com</div>
+              </div>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+940741703653" class="contact-card-item">
+              <div class="contact-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">Call / Phone</span>
+                <div class="contact-detail-val">+94 074 170 3653</div>
+              </div>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/94741703653" target="_blank" rel="noopener noreferrer" class="contact-card-item">
+              <div class="contact-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">WhatsApp Quick Chat</span>
+                <div class="contact-detail-val">+94 074 170 3653</div>
+              </div>
+            </a>
+
+            <!-- Availability -->
+            <div class="contact-card-item">
+              <div class="contact-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">Availability & Location</span>
+                <div class="contact-detail-val">Remote / Open Worldwide</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--text-primary);">Send an Inquiry</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Have a project in mind? Fill out the details below and I'll get back to you shortly.</p>
+          <form id="contactForm">
+            <div class="form-status" id="formStatus"></div>
+
+            <div class="form-group">
+              <label for="nameInput" class="form-label">Your Name</label>
+              <input type="text" id="nameInput" class="form-input" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="emailInput" class="form-label">Your Email</label>
+              <input type="email" id="emailInput" class="form-input" placeholder="alex@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceSelect" class="form-label">Service Needed</label>
+              <select id="serviceSelect" class="form-select">
+                <option value="Branding & Logo Design">Branding & Logo Design</option>
+                <option value="Social Media Graphics">Social Media Graphics</option>
+                <option value="Motion & Video Visuals">Motion & Video Visuals</option>
+                <option value="Presentation & Pitch Decks">Presentation & Pitch Decks</option>
+                <option value="Print & Packaging">Print & Marketing Material</option>
+                <option value="Website & UI Design">Website & UI Design</option>
+                <option value="Other">Other Creative Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="messageInput" class="form-label">Project Details</label>
+              <textarea id="messageInput" class="form-textarea" placeholder="Tell me about your brand, goals, timeline, and deliverables..." required></textarea>
+            </div>
+
+            <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+              <button type="submit" class="btn btn-primary" style="flex: 1 1 200px;">
+                <span>Send Inquiry</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <button type="button" id="whatsappDirectBtn" class="btn btn-whatsapp" style="flex: 1 1 180px;">
+                <span>Chat via WhatsApp</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="#" class="site-logo">
+            <span class="logo-dot"></span>
+            <span>Ravichandran Yadusan</span>
+          </a>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem; max-width: 360px;">
+            Freelance graphic designer specializing in Canva, branding, marketing visuals, and creative direction.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Ravichandran Yadusan. All rights reserved.</div>
+        <div>Crafted with precision & passion.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX / MEDIA MODAL -->
+  <div class="modal-overlay" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      <div class="modal-media-wrapper" id="modalMediaWrapper">
+        <!-- Injected via JS -->
+      </div>
+      <div class="modal-info-body">
+        <div class="modal-project-role" id="modalRole">Role</div>
+        <h3 class="modal-project-title" id="modalTitle">Project Title</h3>
+        <p class="modal-project-desc" id="modalDesc">Project description goes here.</p>
+        <div class="modal-actions-row">
+          <a id="modalExternalLink" class="modal-external-btn" target="_blank" rel="noopener noreferrer" style="display: none;">
+            <span>View Live Project</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+          <a href="#contact" class="btn btn-primary" onclick="closeLightbox()">Hire Me For A Similar Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
